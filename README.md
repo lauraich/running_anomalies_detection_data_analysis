@@ -1,65 +1,57 @@
 ____________________________________________________________________________________
 
-
-# Project Template
-This is the template for the Project I course at the IA Master, Universidad Icesi, Cali Colombia
-
-This template is based on the template proposed by the [Data Science Working Group] (https://github.com/sfbrigade/data-science-wg) Code for the [San Francisco’s Code initiative](https://github.com/sfbrigade/data-science-wg) 
-
-*Instructions: Edit this template filling in the titles, information, and links! Feel free to stray a bit to suit your project but try to provide the main information for reviews and feedback purposes.*
-## Remove this table after updating your project's information
-____________________________________________________________________________________
-
-# Project Name
+# Sistema automatizado para la detección de actividades de corrida anómalas mediante técnicas de aprendizaje no supervisado
 This project is a part of the  **Proyecto 1 de Innovación Tecnológica** course in the Applied Artificial Intelligence Master, Universidad Icesi, Cali Colombia. 
 
-#### -- Project Status: [Active, On-Hold, Completed]
+#### -- Project Status: Active
 
 ## Contributing Members
 
-**Team Leader: [Full Name](https://github.com/[github handle])(@slackHandle)**
-**Instructor: [Full Name](https://github.com/[github handle])(@slackHandle)**
-
-#### Other Members:
-
 |Name     |  Email   | 
 |---------|-----------------|
-|[Full Name](https://github.com/[github handle])| @johnDoe        |
-|[Full Name](https://github.com/[github handle]) |     @janeDoe    |
+|[Laura Isabel Chaparro Navia](https://github.com/lauraich)| @lauraich        |
+|[Fabian Ortiz](https://github.com/FabOrCo) |     @FabOrCo    |
+|[Ricardo Chicangana](https://github.com/rchicangana) |     @rchicangana   |
 
 ## Contact
 * Feel free to contact the team leader or the instructor with any questions or if you are interested in contributing!
 
 
 ## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
-
-### Partner
-This section should be added when there's a partner institution 
-* [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact], [slack handle of contact if any]
-* If you do not have a partner leave this section out
+El propósito del proyecto es desarrollar un sistema automatizado para la detección de actividades de corrida anómalas mediante técnicas de aprendizaje no supervisado utilizando datos de los últimos 5 meses (10/2024 - 02/2025) y empleando métricas cómo velocidad, distancia, elevación, tiempo y frecuencia cardiaca.
 
 ### Methods Used
-* Inferential Statistics
 * Machine Learning
 * Data Visualization
-* Predictive Modeling
-* etc.
+* Clustering Algorithms
 
 ### Technologies
-* R 
 * Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
-* etc. 
 
 ## Project Description
-(Provide a more detailed overview of the project.  Talk a bit about your data sources and what questions and hypotheses you are exploring. What specific data analysis/visualization and modeling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+Swetro es una aplicación en la que los usuarios se registran para competir en retos deportivos de running, ciclismo y caminata, ya sea para ganar premios o simplemente por el espíritu de competencia. Para participar, los usuarios registran sus actividades mediante relojes inteligentes de marcas como Garmin, Suunto, Wahoo, IgpSport, Polar y Apple Watch, o a través de las apps móviles oficiales de estas marcas desde un dispositivo móvil.
+
+Uno de los desafíos recurrentes que enfrenta Swetro es la detección de actividades sospechosas o incoherentes, las cuales pueden surgir por diversas razones, tales como:
+
+* Errores en los sensores de los dispositivos, lo que genera registros
+incorrectos en métricas cómo la velocidad, distancia o ritmo cardíaco.
+
+* Registros humanamente imposibles, como velocidades extremas o distancias cubiertas en tiempos irrealistas.
+
+* Uso inadecuado del dispositivo, por ejemplo, dejarlo encendido todo el día sin realizar actividad física real.
+
+* Intento de fraude, donde un usuario registra una actividad pero en realidad realizó otra (ejemplo: marcar una caminata como un trote).
+
+* Aprovechamiento de medios externos, como subirse a un vehículo o utilizar una bicicleta eléctrica para obtener mejores tiempos y distancias.
+
+Por lo tanto, para evitar que estas irregularidades afecten la competencia justa y la validez de los premios, es necesario desarrollar un sistema de detección de actividades atípicas o sospechosas.
+
+Para este estudio, se utilizará un dataset de los últimos 5 meses (octubre 2024 - febrero 2025) con registros de actividades deportivas:
+
+* Cada fila representa una actividad registrada por un usuario.
+* Cada columna corresponde a una variable o característica de la actividad, como distancia, tiempo, velocidad promedio, ritmo cardíaco promedio, elevación ganada, etc.
+  
+Dado que las irregularidades pueden variar según la disciplina deportiva, este análisis se centrará exclusivamente en los registros de running, buscando patrones que indiquen posibles fraudes o datos erróneos.
 
 ## Getting Started
 Instructions for contributors
@@ -76,8 +68,7 @@ Instructions for contributors
 5. Follow setup [instructions](Link to file)
 
 ## Featured Notebooks/Analysis/Deliverables
-* [Notebook/Markdown/Slide Deck Title](link)
-* [Notebook/Markdown/Slide DeckTitle](link)
-* [Blog Post](link)
+* [https://github.com/lauraich/running_anomalies_detection_data_analysis/blob/main/Primera%20entrega%20-%20Reporte%20de%20la%20primera%20etapa.pdf](link)
+* [https://github.com/lauraich/running_anomalies_detection_data_analysis/blob/main/Proyecto_final_analisis_de_datos_I.ipynb](link)
 
 
